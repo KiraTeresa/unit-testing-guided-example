@@ -1,13 +1,33 @@
 function sum(a, b) {
-  return;
+  let newA = 0;
+  let newB = 0;
+  if (a) {
+    newA = a;
+  }
+  if (b) {
+    newB = b;
+  }
+  return newA + newB;
 }
 
 function subtract(a, b) {
-  return;
+  let newA = 0;
+  let newB = 0;
+  if (a) {
+    newA = a;
+  }
+  if (b) {
+    newB = b;
+  }
+  return newA - newB;
 }
 
 function divide(a, b) {
-  return;
+  if (!b) {
+    throw new Error('Cannot divide by 0');
+  } else {
+    return a / b;
+  }
 }
 
 function multiply(a, b) {
